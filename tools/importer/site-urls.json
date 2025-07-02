@@ -1,0 +1,40 @@
+{
+  "originUrl": "https://wknd-trendsetters-3df4b7964376074fda42d.webflow.io",
+  "lastCrawled": "https://wknd-trendsetters-3df4b7964376074fda42d.webflow.io/",
+  "urls": [
+    {
+      "url": "https://wknd-trendsetters-3df4b7964376074fda42d.webflow.io/",
+      "source": "CRAWL",
+      "targetPath": "/",
+      "id": "c6614ffff58c17311b496f0cb404032cc65148bd"
+    }
+  ],
+  "crawlOptions": {
+    "timeout": 64800000,
+    "inclusionPatterns": [],
+    "exclusionPatterns": [],
+    "limit": -1,
+    "sameDomain": true,
+    "keepHash": false,
+    "strategy": "crawl",
+    "logger": {},
+    "strategiesAttempted": [
+      "SITEMAPS",
+      "CRAWL"
+    ]
+  },
+  "extractionErrors": [
+    {
+      "url": "https://wknd-trendsetters-3df4b7964376074fda42d.webflow.io/404-1",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://wknd-trendsetters-3df4b7964376074fda42d.webflow.io/fashion-insights",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://wknd-trendsetters-3df4b7964376074fda42d.webflow.io/404-2",
+      "status": "404 Not Found"
+    }
+  ]
+}
