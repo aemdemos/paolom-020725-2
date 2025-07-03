@@ -55,6 +55,15 @@
   min-height: 1px;
 }
 
+.columns.columns20 > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .columns.columns5 {
   /* merged declarations from both base and generated (none in base, so only generated) */
 }
@@ -99,7 +108,7 @@
 }
 
 .columns.columns5 h2 {
-  font-family: Syncopate, "Syncopate Fallback", sans-serif;
+  font-family: Syncopate, Syncopate Fallback, sans-serif;
   font-size: 2.1rem;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -119,7 +128,7 @@
   color: #111;
   text-align: center;
   font-size: 1.05rem;
-  font-family: "Instrument Sans", "Instrument Sans Fallback", sans-serif;
+  font-family: Instrument Sans, Instrument Sans Fallback, sans-serif;
   font-weight: 500;
   margin: 0;
   transition: border-color 0.2s, box-shadow 0.2s;
@@ -442,4 +451,173 @@
 
 .columns.columns13 > div > .columns-img-col img {
   display: block;
+}
+
+/* ======== GENERATED CSS ======== */
+
+/* Top-level: make the main wrapper a vertical stack for columns + image */
+.columns.columns20 {
+  margin: 0 auto;
+  padding: 0;
+  background: #fff;
+  max-width: 1200px;
+}
+
+/* The first inner div is the row of two columns */
+.columns.columns20 > div > div:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 48px;
+  width: 100%;
+  padding: 56px 0 0;
+  box-sizing: border-box;
+}
+
+/* Place the general selector before the more specific ones to avoid no-descending-specificity */
+.columns.columns20 > div > div:first-child > div {
+  margin-bottom: 0;
+}
+
+/* Left column: intro, headline, description */
+.columns.columns20 > div > div:first-child > div:first-child {
+  flex: 1 1 56%;
+  max-width: 540px;
+  min-width: 260px;
+  padding-right: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Right column: all contact info only (no image here) */
+.columns.columns20 > div > div:first-child > div:last-child {
+  flex: 0 1 38%;
+  min-width: 230px;
+  max-width: 400px;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Headings & text */
+.columns.columns20 h2 {
+  font-size: 13px;
+  font-family: var(--heading-font-family);
+  color: #888;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+  letter-spacing: 0.09em;
+}
+
+.columns.columns20 h3 {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin: 0 0 24px;
+  color: #181818;
+  line-height: 1.07;
+  /* word-break: break-word; removed deprecated value */
+  overflow-wrap: break-word;
+}
+
+.columns.columns20 > div > div:first-child > div:first-child p {
+  color: #444;
+  font-size: 16px;
+  margin: 0 0 0.8em;
+  line-height: 1.55;
+}
+
+/* Contact info stack vertically */
+.columns.columns20 > div > div:first-child > div:last-child h4 {
+  font-size: 12px;
+  font-family: var(--heading-font-family);
+  text-transform: uppercase;
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin: 0 0 2px;
+  line-height: 1.4;
+  padding-left: 0;
+}
+
+.columns.columns20 > div > div:first-child > div:last-child ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+}
+
+.columns.columns20 > div > div:first-child > div:last-child ul li {
+  color: #222;
+  font-size: 15px;
+  font-family: var(--body-font-family);
+  margin: 0 0 0.5em;
+  font-weight: 500;
+  line-height: 1.6;
+  padding-left: 0;
+}
+
+.columns.columns20 > div > div:first-child > div:last-child ul a {
+  color: #222;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.columns.columns20 > div > div:first-child > div:last-child ul a:hover,
+.columns.columns20 > div > div:first-child > div:last-child ul a:focus {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+/* Add more vertical space between contact blocks */
+.columns.columns20 > div > div:first-child > div:last-child h4:not(:first-child) {
+  margin-top: 24px;
+}
+
+/* Full-width image below both columns */
+.columns.columns20 > div > p:last-child {
+  width: 100%;
+  margin: 48px 0 0;
+  padding: 0;
+  display: block;
+  align-self: stretch;
+}
+
+.columns.columns20 > div > p:last-child picture,
+.columns.columns20 > div > p:last-child img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 24px;
+  margin: 0 auto;
+  box-shadow: 0 8px 32px rgb(0 0 0 / 8%);
+  height: auto;
+}
+
+/* Responsive: stack columns vertically and image full-width */
+@media (width <= 900px) {
+  .columns.columns20 > div > div:first-child {
+    flex-direction: column;
+    gap: 36px;
+    padding: 28px 0 0;
+  }
+  .columns.columns20 > div > div:first-child > div:first-child,
+  .columns.columns20 > div > div:first-child > div:last-child {
+    max-width: 100%;
+    min-width: 0;
+    padding: 0;
+  }
+  .columns.columns20 > div > p:last-child {
+    margin: 24px 0 0;
+  }
+}
+
+.columns.columns20 > div > div:first-child > div:last-child ul:last-of-type {
+  margin-bottom: 0;
 }
