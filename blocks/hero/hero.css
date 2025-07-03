@@ -4,6 +4,18 @@
   padding: 0;
 }
 
+.hero.hero6 {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-height: 540px;
+  width: 100vw;
+  overflow: hidden;
+  border-radius: 14px;
+  box-sizing: border-box;
+  padding: 0;
+}
+
 .hero {
   position: relative;
   padding: 40px 24px;
@@ -217,15 +229,7 @@
 }
 
 /* ====== merged .hero.hero4 selector ====== */
-.hero.hero4 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  background: #fff;
-  padding: 0;
-  gap: 0;
-}
-
+.hero.hero4,
 .hero.hero4.block.no-image {
   display: flex;
   flex-direction: row;
@@ -274,7 +278,6 @@
   overflow-wrap: break-word;
 }
 
-/* Move this selector before .hero.hero1 > div:last-child > div > p:first-child to fix specificity error */
 .hero.hero4.block.no-image h2 + p {
   font-size: 1rem;
   color: #181818;
@@ -340,5 +343,133 @@
   .hero.hero4.block.no-image > div:last-child > div > *:nth-child(2) {
     max-width: 100%;
     font-size: 0.98rem;
+  }
+}
+
+/* Moved .hero.hero6 selectors earlier to resolve specificity order issues */
+.hero.hero6 > div:first-child {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  display: flex;
+}
+
+.hero.hero6 picture,
+.hero.hero6 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero.hero6 > div:last-child {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+}
+
+/* GLASS PANEL OVERLAY */
+.hero.hero6 > div:last-child > div {
+  background: rgb(40 40 45 / 6%);
+  border: 1px solid #fff;
+  border-radius: 14px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 3px 16px rgb(0 0 0 / 4%);
+  padding: 7px 16px 9px 15px;
+  margin: 2px 0 0 3px;
+  max-width: 390px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero.hero6 h1 {
+  color: #fff;
+  font-family: Syncopate, "Syncopate Fallback", sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: 0.01em;
+  margin: 0 0 7px;
+  text-align: left;
+  padding: 0;
+}
+
+.hero.hero6 p:not(.button-container) {
+  color: rgb(255 255 255 / 82%);
+  font-size: 14.2px;
+  line-height: 1.4;
+  margin: 0 0 8px;
+  font-weight: 400;
+  text-align: left;
+  padding: 0;
+}
+
+.hero.hero6 .button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.hero.hero6 .button-container .button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 2em;
+  font-size: 12.5px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 5px 13px;
+  margin: 0;
+  box-shadow: none;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  outline: none;
+}
+
+.hero.hero6 .button-container .button:hover,
+.hero.hero6 .button-container .button:focus {
+  background: rgb(255 255 255 / 8%);
+  color: #fff;
+  border-color: #fff;
+}
+
+@media (width <= 900px) {
+  .hero.hero6 {
+    min-height: 320px;
+    border-radius: 0;
+  }
+
+  .hero.hero6 > div:last-child > div {
+    margin: 2px 1px 0;
+    padding: 4px 4px 5px 5px;
+    max-width: 98vw;
+    border-radius: 8px;
+  }
+
+  .hero.hero6 h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+
+  .hero.hero6 p:not(.button-container) {
+    font-size: 10.5px;
+    margin-bottom: 4px;
+  }
+
+  .hero.hero6 .button-container .button {
+    font-size: 10.5px;
+    padding: 4px 8px;
   }
 }
