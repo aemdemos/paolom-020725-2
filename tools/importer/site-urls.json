@@ -1,0 +1,92 @@
+{
+  "originUrl": "https://wknd-trendsetters.webflow.io",
+  "lastCrawled": "https://wknd-trendsetters.webflow.io/",
+  "urls": [
+    {
+      "url": "https://wknd-trendsetters.webflow.io/",
+      "source": "SITEMAPS",
+      "targetPath": "/",
+      "id": "0c5f4f7ce8864d7af03165aec812a12465ec27e7"
+    },
+    {
+      "url": "https://wknd-trendsetters.webflow.io/blog/fashion-blog-post",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/fashion-blog-post",
+      "id": "927dc70b8d0c780767a731f2bd6caece006c8e29"
+    },
+    {
+      "url": "https://wknd-trendsetters.webflow.io/blog/fashion-trends-young-culture",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/fashion-trends-young-culture",
+      "id": "24d0372b35ead7342b87543fbbc0be5c45f29630"
+    },
+    {
+      "url": "https://wknd-trendsetters.webflow.io/blog/fashion-trends-young-style",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/fashion-trends-young-style",
+      "id": "f9857906773da60d7160b16f2db1e2eda0dc6fa1"
+    },
+    {
+      "url": "https://wknd-trendsetters.webflow.io/blog/latest-trends-young-casual-fashion",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/latest-trends-young-casual-fashion",
+      "id": "a50920c91a2d15e1fe29a2ac05b71e5aad8f06fa"
+    },
+    {
+      "url": "https://wknd-trendsetters.webflow.io/faq",
+      "source": "SITEMAPS",
+      "targetPath": "/faq",
+      "id": "39ea343bee8fc7d4edba337f60c0d7510c9c46cd"
+    },
+    {
+      "url": "https://wknd-trendsetters.webflow.io/fashion-insights",
+      "source": "SITEMAPS",
+      "targetPath": "/fashion-insights",
+      "id": "ea7eb16d67cfbaaef306533ddfe915a8f4730012"
+    },
+    {
+      "url": "https://wknd-trendsetters.webflow.io/fashion-trends-of-the-season",
+      "source": "SITEMAPS",
+      "targetPath": "/fashion-trends-of-the-season",
+      "id": "0075ae26aed0fbe118fcf6403913a4675f852a3c"
+    },
+    {
+      "url": "https://wknd-trendsetters.webflow.io/fashion-trends-young-adults",
+      "source": "SITEMAPS",
+      "targetPath": "/fashion-trends-young-adults",
+      "id": "1ac9604369412593284c7cabedbdb868d4de24e1"
+    },
+    {
+      "url": "https://wknd-trendsetters.webflow.io/fashion-trends-young-adults-casual-sport",
+      "source": "SITEMAPS",
+      "targetPath": "/fashion-trends-young-adults-casual-sport",
+      "id": "251cb4f5e0d8ca921a8de8c69ca1e62c463c251c"
+    },
+    {
+      "url": "https://wknd-trendsetters.webflow.io/latest-trends-young-fashion",
+      "source": "SITEMAPS",
+      "targetPath": "/latest-trends-young-fashion",
+      "id": "f75120b4c802db89d4360cdfd336761819180703"
+    },
+    {
+      "url": "https://wknd-trendsetters.webflow.io/style-guide",
+      "source": "SITEMAPS",
+      "targetPath": "/style-guide",
+      "id": "58023be5e536317d3c633e68ccd5b69f9bd546e5"
+    }
+  ],
+  "crawlOptions": {
+    "timeout": 64800000,
+    "inclusionPatterns": [],
+    "exclusionPatterns": [],
+    "limit": -1,
+    "sameDomain": true,
+    "keepHash": false,
+    "strategy": "sitemaps",
+    "logger": {},
+    "strategiesAttempted": [
+      "SITEMAPS"
+    ]
+  },
+  "extractionErrors": []
+}
